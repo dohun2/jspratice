@@ -9,35 +9,42 @@
 </head>
 <body>
 
-  <form class="hidden" id="login-form">
-    <input 
-    required 
-    maxlength="15" 
-    type="text" 
-    placeholder="What is your name?" />
-    <input type="submit" value="Login"/>
-  </form>
   <h2 id="clock">00:00</h2>
-  <h1 class="hidden" id="greeting"></h1>
-  <form id="todo-form">
-    <input  required type="text" placeholder="할일 목록을 작성하고 엔터를 눌러주세요!"/>
+
+  <form class="hidden" id="login-form">
+      <input class="name"
+      required 
+      maxlength="15" 
+      type="text" 
+      placeholder="What your name?" />
+      <input class="hidden" type="submit" value="Login"/>
   </form>
-  <ul id="todo-list"></ul>
+   
+   <h1 class="hidden" id="greeting"></h1>
+  
+   <div class="todo-box">
+    <form id="todo-form" class="hidden">
+      <input  class="todo-text" required type="text" placeholder="TODO LIST"/>
+    </form>
+    <ul id="todo-list"></ul>
+   </div>
+
+
   <div id="quote">
     <span></span>
     <span></span>
   </div>
+
   <div id="weather">
     <span></span>
     <span></span>
   </div>
+
   <script src="js/geetings.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/quotes.js"></script>
   <script src="js/background.js"></script>
   <script src="js/todo.js"></script>
-  <script src="js/weather.js"></script>
-  
-  
+  <script src="js/weather.js"></script>  
 </body>
 </html>

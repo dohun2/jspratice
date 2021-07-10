@@ -32,11 +32,11 @@ const quotes = [
     author: "헨리 포드 ",
   },
   {
-    quote: "대부분의 사람들은 문제를 해결하려고 노력하기보다는 문제의 주변만 기웃거리는 데 더 많은 에어지와 시간을 낭비한다.",
+    quote: "대부분의 사람들은 문제를 해결하려고 노력하기보다는 문제의 주변만 기웃거리는 데 더 많은 에너지와 시간을 낭비한다.",
     author: "헨리 포드",
   },
   {
-    quote: "너는 돈을 통제하는 법을 배워야 나다. 그렇지 않으면 영원히 돈이 널 영원토록 지배할 것이다.",
+    quote: "너는 돈을 통제하는 법을 배워야 한다. 그렇지 않으면 영원히 돈이 널 영원토록 지배할 것이다.",
     author: "데이브 램지",
   }
 ]
@@ -47,4 +47,4 @@ const author = document.querySelector("#quote span:last-child");
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)]
 
 quote.innerText = todayQuote.quote;
-author.innerText = todayQuote.author;
+author.innerText = `- ${todayQuote.author} -`;

@@ -8,5 +8,13 @@ function getClock() {
   clock.innerText = (`${hours}:${minutes}:${seconds}`)
 }
 
+function getName() {
+  clock.style.position ="absolute";
+  clock.style.top ="0";
+}
+
+loginForm.addEventListener("submit", getName)
+
+
 getClock()
 setInterval(getClock, 1000)
