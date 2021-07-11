@@ -15,7 +15,6 @@ function getName() {
 
 loginForm.addEventListener("submit", getName)
 
-
 getClock()
 setInterval(getClock, 1000)
 
