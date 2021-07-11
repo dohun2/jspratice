@@ -54,6 +54,11 @@ if (savedToDos !== null) {
 
 function displayToDo() {
   toDoForm.classList.remove(HIDDEN_CLASSNAME);
+  
 }
 
 loginForm.addEventListener("submit", displayToDo);
+
+if (savedUSername !== null) {
+  toDoForm.classList.remove(HIDDEN_CLASSNAME);
+}

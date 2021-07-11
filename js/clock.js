@@ -18,3 +18,8 @@ loginForm.addEventListener("submit", getName)
 
 getClock()
 setInterval(getClock, 1000)
+
+if (savedUSername !== null) {
+  clock.style.position ="absolute";
+  clock.style.top ="0";
+}
