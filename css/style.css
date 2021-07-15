@@ -36,6 +36,8 @@ body {
   font-size: 20px;
   background: transparent;
   border-style: none;
+  color: var(--mainwhite);
+  font-size: 30px;
 }
 
 .name::placeholder {
@@ -100,6 +102,8 @@ body {
   text-align: center;
   background: transparent;
   border: solid 2px var(--mainwhite);
+  color: var(--mainwhite);
+  font-size: 15px;
 }
 
 .todo-text::placeholder {
